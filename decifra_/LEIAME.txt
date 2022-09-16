@@ -1,0 +1,21 @@
+REGRAS DO JOGO:
+
+CINCO QUADRADOS DE ENTRADA PARA SE DIGITAR CINCO LETRAS QUE FORMEM UM PALAVRA QUALQUER (OU NÃO)
+O JOGADOR POSSUI SEIS TENTATIVAS PARA DESVENDAR UMA PALAVRA OCULTA, QUE DEVEM SER ENVIADAS 
+PELOS QUADRADOS. A PALAVRA ENVIADA SERÁ EXIBIDA NA TELA COM UM DETERMINADO PADRÃO DE CORES 
+POR CARACTERE, REPRESENTANDO SIGNIFICADOS.
+
+CORES DOS CARACTERES:
+
+    PRETO: a letra não está presente na palavra oculta.
+
+    AMARELO: a letra está presente na palavra oculta, porém, na posição errada.
+        NOTA: a repetição de uma determinado caractere em amarelo não
+        necessariamente significa que a palavra possua mais de um caractere
+        deste tipo.
+
+    VERDE: a letra está no seu respectivo lugar em relação à palavra oculta.
+
+Se o jogador descobrir a palavra, ele ganhará o jogo, tendo a cor de fundo mudada para azul.
+Se o jogador errar todas as seis entradas, ele perderá o jogo, sendo exibida a palavra
+oculta e alterando a cor de fundo como vermelha.

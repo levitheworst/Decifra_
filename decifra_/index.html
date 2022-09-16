@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div style="z-index: 0;">
+            <canvas style="z-index: -1;"></canvas>
+        </div>
+        <div class="container">
+            <div id="header" style="font-size: 70px; text-align: center;">decifra_</div>
+            <div class="box">
+				<h6>Voc&ecirc; possui <span id="contador">6</span> tentativas</h6>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-class" style="display: none;">
+                </div>
+                <div class="word-inputs">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <button class="submitbtn" onclick="
+                isNotUndefined = true
+                for(let i = 0; i < 5; i++)
+                {
+                    input[i].value == undefined | input[i].value == ' ' | input[i].value == '' ? isNotUndefined = false : false
+                }
+                if(isNotUndefined)checkWord()
+                ">--></button>
+            </div>
+        </div>
+    </div>
+    <script src="palavras.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
